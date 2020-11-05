@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-column: 1fr 1fr;
+    gap: 2rem;
+    font-family: "Baloo Chettan 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #171927;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+    color: rgb(219, 105, 105);
+}
+
+header nav h1 {
+    color: rgb(219, 105, 105);
+}
+
+header img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(133, 60, 60);
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.toggle-collapse {
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-collapse .ham-menu {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(133, 60, 60);
+    border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+    .toggle-collapse {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-links li {
+        text-align: center;
+    }
+    .nav-links li a {
+        padding: 0.5rem 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 1.5rem;
+    margin: 90px auto;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+
+/* Change footer styling */
+
+.footer {
+    display: flex;
+    border-top: 1px solid rgb(192, 185, 185);
+    box-shadow: inset 0 15px 5px -16px #111;
+    color: #ffffff;
+    position: relative;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.social-foot img {
+    padding-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.subscribe {
+    border-radius: 10px;
+    background-color: rgb(219, 105, 105);
+    color: #fff;
+    padding: 8px;
+    border: none;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
