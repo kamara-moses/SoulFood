@@ -120,7 +120,7 @@ header img {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 0.5fr;
     width: 90%;
     gap: 1.5rem;
     margin: 90px auto;
@@ -130,6 +130,27 @@ img {
     width: 100%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     height: 400px;
+}
+
+aside {
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside .avatar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+aside p,
+aside blockquote {
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 16px;
 }
 
 

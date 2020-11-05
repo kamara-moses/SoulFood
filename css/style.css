@@ -1,3 +1,6 @@
+@import url("./blog-post.css");
+@import url("./footer.css");
+@import url("./nav.css");
 *,
 *:before,
 *:after {
