@@ -129,10 +129,10 @@ header img {
 }
 
 .main .cards {
-    display: flex;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    width: auto;
+    width: 100%;
 }
 
 .card>* {
@@ -140,7 +140,7 @@ header img {
 }
 
 .card img {
-    width: 300px;
+    width: 100%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     height: 245px;
 }
